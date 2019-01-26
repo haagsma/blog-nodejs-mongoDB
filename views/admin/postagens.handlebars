@@ -1,0 +1,28 @@
+<h2>Postagens</h2>
+<hr>
+<a href="/admin/postagens/add"><button class="btn btn-primary">Adicionar Postagem</button></a>
+<hr>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Título</th>
+        <th>Slug</th>
+        <th>Descrição</th>
+        <th>Categoria</th>
+        <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each posts}}
+    <tr>
+        <td>{{titulo}}</td>
+        <td>{{slug}}</td>
+        <td>{{descricao}}</td>
+        <td>{{categoria.nome}}</td>
+        <td><a class="mx-2" href="/admin/postagens/edit/{{_id}}"><button class="btn btn-warning"><i class="far fa-edit"></i></button></a><a href="/admin/postagens/delete/{{_id}}"><button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></a></td>
+    </tr>
+    {{else}}
+
+    {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+<h2>Categorias</h2>
+<hr>
+<a href="/admin/categorias/add"><button class="btn btn-primary">Adicionar Categorias</button></a>
+<hr>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Slug</th>
+        <th>Ação</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each cats}}
+    <tr>
+        <td>{{nome}}</td>
+        <td>{{slug}}</td>
+        <td><a class="mx-2" href="/admin/categorias/edit/{{_id}}"><button class="btn btn-warning"><i class="far fa-edit"></i></button></a><a href="/admin/categorias/delete/{{_id}}"><button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></a></td>
+    </tr>
+    {{else}}
+
+    {{/each}}
+    </tbody>
+</table>

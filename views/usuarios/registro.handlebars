@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-body">
+        <h1>Cadastro de Usuários</h1>
+        <hr>
+        <form action="/usuarios/registro" method="post">
+            <div class="form-group row">
+                <label class="col-md-2 text-center my-auto" for="nome">Nome</label>
+                <input class="form-control col-md-6" name="nome" id="nome" placeholder="nome">
+            </div>
+            <div class="form-group row">
+                <label class="col-md-2 text-center my-auto" for="email">Email</label>
+                <input class="form-control col-md-6" type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group row">
+                <label class="col-md-2 text-center my-auto" for="senha">Senha</label>
+                <input class="form-control col-md-6" type="password" name="senha" id="senha" placeholder="********">
+            </div>
+            <div class="form-group row">
+                <label class="col-md-2 text-center my-auto" for="senha2">Confirmar senha</label>
+                <input class="form-control col-md-6" type="password" name="senha2" id="senha2" placeholder="********">
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-success ">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>
